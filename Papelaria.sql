@@ -1,4 +1,4 @@
-CREATE DATABASE Papelaria
+/*CREATE DATABASE Papelaria
 on
 (
 name = 'Papelaria_data',
@@ -80,4 +80,21 @@ idDetalhes int identity primary key,
 idPedidos int foreign key references Pedidos not null,
 idProduto int foreign key references Produtos not null,
 quantidadeComprada int not null
-)
+)*/
+
+--select * from Categorias
+
+--INSERT INTO Categorias(titulo)values('Escolar'),('Informática')
+--go
+--SELECT * FROM Categorias
+
+/*INSERT INTO Produtos(nomeProduto, descricao, idCategoria, preco) values ('Caneta','Caneta Preta', 1, 5.9)
+
+SELECT * FROM Produtos*/
+
+--UPDATE Produtos SET preco = preco * 1.2 where idProduto < 6
+
+DELETE FROM Produtos where idProduto > 6
+
+SELECT * FROM Produtos
+
